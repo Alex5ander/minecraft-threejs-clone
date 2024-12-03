@@ -15,12 +15,12 @@ const scene = new THREE.Scene();
 scene.fog = new THREE.Fog(0xffffff, 50, 100);
 
 const skyBox = new THREE.CubeTextureLoader().load([
-  "./Other/skybox_side.png",
-  "./Other/skybox_side.png",
-  "./Other/skybox_top.png",
-  "./Other/skybox_bottom.png",
-  "./Other/skybox_side.png",
-  "./Other/skybox_side.png",
+  "Other/skybox_side.png",
+  "Other/skybox_side.png",
+  "Other/skybox_top.png",
+  "Other/skybox_bottom.png",
+  "Other/skybox_side.png",
+  "Other/skybox_side.png",
 ]);
 
 scene.background = skyBox;
