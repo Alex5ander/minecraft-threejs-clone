@@ -12,22 +12,22 @@ const loadTexture = (value) => {
   return new THREE.MeshLambertMaterial({ map: texture, transparent: true });
 }
 
-const grass_top = loadTexture('./Tiles/grass_top.png');
-const dirt_grass = loadTexture('./Tiles/dirt_grass.png');
-const snow = loadTexture('./Tiles/snow.png');
-const dirt_snow = loadTexture('./Tiles/dirt_snow.png');
-const dirt = loadTexture('./Tiles/dirt.png');
-const stone = loadTexture('./Tiles/stone.png');
-const sand = loadTexture('./Tiles/sand.png');
-const water = loadTexture('./Tiles/water.png');
-const lava = loadTexture('./Tiles/lava.png');
-const trunk_side = loadTexture('./Tiles/trunk_side.png');
-const leaves_transparent = loadTexture('./Tiles/leaves_transparent.png');
-const leaves_orange_transparent = loadTexture('./Tiles/leaves_orange_transparent.png');
-const trunk_top = loadTexture('./Tiles/trunk_top.png');
-const cactus_inside = loadTexture('./Tiles/cactus_inside.png');
-const cactus_side = loadTexture('./Tiles/cactus_side.png');
-const cactus_top = loadTexture('./Tiles/cactus_top.png');
+const grass_top = loadTexture('Tiles/grass_top.png');
+const dirt_grass = loadTexture('Tiles/dirt_grass.png');
+const snow = loadTexture('Tiles/snow.png');
+const dirt_snow = loadTexture('Tiles/dirt_snow.png');
+const dirt = loadTexture('Tiles/dirt.png');
+const stone = loadTexture('Tiles/stone.png');
+const sand = loadTexture('Tiles/sand.png');
+const water = loadTexture('Tiles/water.png');
+const lava = loadTexture('Tiles/lava.png');
+const trunk_side = loadTexture('Tiles/trunk_side.png');
+const leaves_transparent = loadTexture('Tiles/leaves_transparent.png');
+const leaves_orange_transparent = loadTexture('Tiles/leaves_orange_transparent.png');
+const trunk_top = loadTexture('Tiles/trunk_top.png');
+const cactus_inside = loadTexture('Tiles/cactus_inside.png');
+const cactus_side = loadTexture('Tiles/cactus_side.png');
+const cactus_top = loadTexture('Tiles/cactus_top.png');
 const clouds = new THREE.MeshBasicMaterial({ color: 0xffffff, });
 clouds.side = THREE.DoubleSide;
 
