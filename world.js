@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-// import { WorldChunk } from './worldChunk';
+import { WorldChunk } from './worldChunk';
 
 export class World extends THREE.Group {
   chunkSize = 32;
@@ -7,7 +7,7 @@ export class World extends THREE.Group {
   terrainScale = 31.2;
   magnitude = 18.9;
   offset = 5.5;
-  // /** @type {{[key:string]:WorldChunk}} */
+  /** @type {{[key:string]:WorldChunk}} */
   chunks = {};
   drawDistance = 2;
   constructor() {
@@ -24,13 +24,13 @@ export class World extends THREE.Group {
   }
   generateChunk(x, z) {
     if (!this.chunks[x + "" + z]) {
-      // const chunk = new WorldChunk(this.chunkSize, this.height, this.terrainScale, this.magnitude, this.offset);
-      // chunk.position.set(x * this.chunkSize, 0, z * this.chunkSize);
-      // chunk.userData = { x, z }
-      // chunk.generate();
-      // chunk.generateMeshes();
-      // this.chunks[x + "" + z] = chunk;
-      // this.add(chunk);
+      const chunk = new WorldChunk(this.chunkSize, this.height, this.terrainScale, this.magnitude, this.offset);
+      chunk.position.set(x * this.chunkSize, 0, z * this.chunkSize);
+      chunk.userData = { x, z }
+      chunk.generate();
+      chunk.generateMeshes();
+      this.chunks[x + "" + z] = chunk;
+      this.add(chunk);
     }
   }
   disposeChunks() {
